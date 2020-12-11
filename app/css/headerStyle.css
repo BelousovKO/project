@@ -79,6 +79,7 @@ header {
     flex: 1;
     margin: 0 33px;
 }
+
 .search > label {
     position: relative;
     width: 100%;
@@ -102,11 +103,11 @@ header {
     opacity: 0.2;
     pointer-events: none;
     text-align: start;
-    width:100%
+    width: 100%
 }
 
-.label-search  input:valid + .placeholder,
-.label-search  input:valid + .placeholder + .placeholder-table-version {
+.label-search input:valid + .placeholder,
+.label-search input:valid + .placeholder + .placeholder-table-version {
     display: none;
 }
 
@@ -150,13 +151,13 @@ header {
 }
 
 .inCatalog-mobile {
-display: none;
+    display: none;
 }
 
 .icon {
-display: flex;
-align-items: center;
-gap: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 @media (max-width: 1023px) {
@@ -179,7 +180,7 @@ gap: 10px;
     }
 
     .search {
-        margin-left: 8px ;
+        margin-left: 8px;
     }
 
     .button-search {
