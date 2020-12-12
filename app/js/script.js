@@ -2,18 +2,15 @@ window.onload = function () {
     let elements = document.querySelectorAll('*');
     let countElements = elements.length;
     let randomNumber;
-    let red;
-    let green;
-    let blue;
     let randomColor;
     let numberOfColor = 50;
     let i = 0;
     let stylesArray = [];
 
     let randomColorResult = () => {
-        red = Math.floor(Math.random() * 256);
-        green = Math.floor(Math.random() * 256);
-        blue = Math.floor(Math.random() * 256);
+        let red = Math.floor(Math.random() * 256);
+        let green = Math.floor(Math.random() * 256);
+        let blue = Math.floor(Math.random() * 256);
         randomColor = 'rgb(' + red + ',' + green + "," + blue + ')';
     };
 
