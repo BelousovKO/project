@@ -11,14 +11,14 @@ window.onload = function () {
     let stylesArray = [];
 
     let randomColorResult = () => {
-        red = Math.floor(Math.random() * (255 - 1) + 1);
-        green = Math.floor(Math.random() * (255 - 1) + 1);
-        blue = Math.floor(Math.random() * (255 - 1) + 1);
+        red = Math.floor(Math.random() * 256);
+        green = Math.floor(Math.random() * 256);
+        blue = Math.floor(Math.random() * 256);
         randomColor = 'rgb(' + red + ',' + green + "," + blue + ')';
     };
 
     let randomElement = () => {
-        randomNumber = Math.floor(Math.random() * (countElements - 1) + 1);
+        randomNumber = Math.floor(Math.random() * countElements + 1);
     };
 
     setInterval(() => {
