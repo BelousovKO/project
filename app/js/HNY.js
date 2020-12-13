@@ -1,4 +1,4 @@
-window.onload = function () {
+export default function () {
     let elements = document.querySelectorAll('*');
     let countElements = elements.length;
     let randomNumber;
@@ -60,4 +60,4 @@ window.onload = function () {
             console.log('removed ', foundClass);
         }
     }, 2000);
-};
+}

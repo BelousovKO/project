@@ -1,4 +1,5 @@
-window.onload = function () {
+export default function () {
+
     let infoCards = [
         {
             "img": "img/dog-1.png",
@@ -168,7 +169,7 @@ window.onload = function () {
             "goodObedience": 1,
             "veryDevoted": 1
         }
-    ]
+    ];
 
     const randomSortCards = infoCards.sort(function () {
         return Math.random() - 0.5;
@@ -184,8 +185,5 @@ window.onload = function () {
         fragment.appendChild(item);
         document.querySelector('.product-section').appendChild(fragment);
     });
-
-    console.log(parentItem);
     parentItem.removeChild(parentItem.firstElementChild);
-
-};
+}

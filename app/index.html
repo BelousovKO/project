@@ -10,9 +10,7 @@
     <link rel="stylesheet" href="css/filterStyle.css">
     <link rel="stylesheet" href="css/catalogStyle.css">
     <link rel="stylesheet" href="css/headerStyle.css">
-    <!--<script src="js/script.js"></script>-->
-    <script src="js/script2.js"></script>
-    <script src="js/script3.js"></script>
+    <script type="module" src="js/scriptOnload.js"></script>
 </head>
 <body>
 <header>
@@ -81,26 +79,34 @@
                         <a class="a-filter block-type" href="#">
                             <img src="css/iconButton/closeSectionFilter.svg" alt="свернуть">
                         </a>
-                        <label class="label">
-                            <input type="checkbox" class="checkbox">
-                            <span class="fake-checkbox"></span>
-                            <span class="text">Охотничьи</span>
-                        </label>
-                        <label class="label">
-                            <input type="checkbox" class="checkbox">
-                            <span class="fake-checkbox"></span>
-                            <span class="text">Компаньоны</span>
-                        </label>
-                        <label class="label">
-                            <input type="checkbox" class="checkbox">
-                            <span class="fake-checkbox"></span>
-                            <span class="text">Декоративные</span>
-                        </label>
-                        <label class="label">
-                            <input type="checkbox" class="checkbox">
-                            <span class="fake-checkbox"></span>
-                            <span class="text">Служебные</span>
-                        </label>
+                        <div class="label-container">
+                            <label class="label">
+                                <input type="checkbox" class="checkbox" id="hunter">
+                                <span class="fake-checkbox"></span>
+                                <span class="text">Охотничьи</span>
+                            </label>
+                        </div>
+                        <div class="label-container">
+                            <label class="label">
+                                <input type="checkbox" class="checkbox" id="companion">
+                                <span class="fake-checkbox"></span>
+                                <span class="text">Компаньоны</span>
+                            </label>
+                        </div>
+                        <div class="label-container">
+                            <label class="label">
+                                <input type="checkbox" class="checkbox" id="decorative">
+                                <span class="fake-checkbox"></span>
+                                <span class="text">Декоративные</span>
+                            </label>
+                        </div>
+                        <div class="label-container">
+                            <label class="label">
+                                <input type="checkbox" class="checkbox" id="service">
+                                <span class="fake-checkbox"></span>
+                                <span class="text">Служебные</span>
+                            </label>
+                        </div>
                     </div>
                     <div class="section-form">
                         <h3 class="h3filter">Основные черты</h3>
@@ -109,33 +115,43 @@
                         </a>
                         <div class="fast-search-wrapper">
                             <img class="search-icon" src="css/iconButton/search.svg" alt="Лупа">
-                            <input type="text" class="fast-search" placeholder="Быстрый поиск">
+                            <label><input type="text" class="fast-search" placeholder="Быстрый поиск"></label>
                         </div>
-                        <label class="label">
-                            <input type="checkbox" class="checkbox">
-                            <span class="fake-checkbox"></span>
-                            <span class="text">Отсутствует чувство страха</span>
-                        </label>
-                        <label class="label">
-                            <input type="checkbox" class="checkbox">
-                            <span class="fake-checkbox"></span>
-                            <span class="text">Мало линяет</span>
-                        </label>
-                        <label class="label">
-                            <input type="checkbox" class="checkbox">
-                            <span class="fake-checkbox"></span>
-                            <span class="text">Отличное здоровье</span>
-                        </label>
-                        <label class="label">
-                            <input type="checkbox" class="checkbox">
-                            <span class="fake-checkbox"></span>
-                            <span class="text">Хорошее послушание</span>
-                        </label>
-                        <label class="label">
-                            <input type="checkbox" class="checkbox">
-                            <span class="fake-checkbox"></span>
-                            <span class="text">Очень преданная</span>
-                        </label>
+                        <div class="label-container">
+                            <label class="label">
+                                <input type="checkbox" class="checkbox" id="noFear">
+                                <span class="fake-checkbox"></span>
+                                <span class="text">Отсутствует чувство страха</span>
+                            </label>
+                        </div>
+                        <div class="label-container">
+                            <label class="label">
+                                <input type="checkbox" class="checkbox" id="shedsLittle">
+                                <span class="fake-checkbox"></span>
+                                <span class="text">Мало линяет</span>
+                            </label>
+                        </div>
+                        <div class="label-container">
+                            <label class="label">
+                                <input type="checkbox" class="checkbox" id="excellentHealth">
+                                <span class="fake-checkbox"></span>
+                                <span class="text">Отличное здоровье</span>
+                            </label>
+                        </div>
+                        <div class="label-container">
+                            <label class="label">
+                                <input type="checkbox" class="checkbox" id="goodObedience">
+                                <span class="fake-checkbox"></span>
+                                <span class="text">Хорошее послушание</span>
+                            </label>
+                        </div>
+                        <div class="label-container">
+                            <label class="label">
+                                <input type="checkbox" class="checkbox" id="veryDevoted">
+                                <span class="fake-checkbox"></span>
+                                <span class="text">Очень преданная</span>
+                            </label>
+                        </div>
                         <a href="" class="a-filter-all">Показать все</a>
                     </div>
                     <div class="section-form-size">

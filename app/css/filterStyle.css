@@ -85,6 +85,10 @@
     font-size: 14px;
 }
 
+.filter {
+    position: relative;
+}
+
 @media (max-width: 639px) {
     .filter {
         display: none;
